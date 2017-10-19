@@ -32,4 +32,9 @@ public class Employee implements Comparable<Employee> {
 	public int compareTo(Employee other) {
 		return employeeId.compareTo(other.employeeId);
 	}
+	
+	@Override
+	public String toString() {
+		return firstName + " " + lastName;
+	}
 }
